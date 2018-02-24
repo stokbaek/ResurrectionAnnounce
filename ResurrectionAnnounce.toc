@@ -2,7 +2,7 @@
 ## Title: |cFFFF8080R|resurrection |cFFFF8080A|rnnouncement
 ## Author: stokbaek
 ## Notes: Plugin That Adds Resurrection Announce to Chat
-## Version: 1.0
+## Version: 1.1
 ## Note: This Plugin needs to either have HealComm or LunaFrames installed to work
 ## SavedVariablesPerCharacter: sayres_options
 
