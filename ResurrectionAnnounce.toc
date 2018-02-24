@@ -4,7 +4,7 @@
 ## Notes: Plugin That Adds Resurrection Announce to Chat
 ## Version: 1.1
 ## Note: This Plugin needs to either have HealComm or LunaFrames installed to work
-## SavedVariablesPerCharacter: sayres_options
+## SavedVariablesPerCharacter: ra_options
 
 # main
 core.lua

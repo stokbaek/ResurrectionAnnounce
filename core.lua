@@ -1,5 +1,13 @@
 ra_options = {}
 
+rahealcomm = CreateFrame("Frame")
+rahealcomm:RegisterEvent("CHAT_MSG_ADDON")
+rahealcomm:SetScript("OnEvent", function()
+  if event == "CHAT_MSG_ADDON" and arg1 == "HealComm" then
+    this:ParseChatMessage(arg4, arg2)
+  end
+end)
+
 function rahealcomm:ParseChatMessage(sender, msg)
   local _, _, evtype, target  = string.find(msg, '(Resurrection)/(%a+)/(start)/')
   if evtype and target then

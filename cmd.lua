@@ -1,3 +1,5 @@
+ra_options = {}
+
 SLASH_SAYRES1, SLASH_SAYRES2 = '/sayres', '/sr'
 function SlashCmdList.SAYRES(msg, editbox)
   local cmd, opt = strsplit(" ", msg)
@@ -6,10 +8,13 @@ function SlashCmdList.SAYRES(msg, editbox)
   if cmd == "chat" then
     if opt == "0" then
       DEFAULT_CHAT_FRAME:AddMessage(chatformat_cmd.."Chat Output set to: |cff00ff00DYNAMIC")
+      ra_options.chat = "0"
     elseif opt == "1" then
       DEFAULT_CHAT_FRAME:AddMessage(chatformat_cmd.."Chat Output set to: |cffff7d00RAID")
+      ra_options.chat = "1"
     elseif opt == "2" then
       DEFAULT_CHAT_FRAME:AddMessage(chatformat_cmd.."Chat Output set to: |rSAY")
+      ra_options.chat = "2"
     else
       DEFAULT_CHAT_FRAME:AddMessage(chatformat_info.."Unknown Chat Option")
       return
